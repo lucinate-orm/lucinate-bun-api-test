@@ -1,0 +1,24 @@
+{
+    "name": "lucinate-api-test",
+    "module": "src/index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "build:db": "tsc -p tsconfig.db.json && tsc-alias -p tsconfig.db.json",
+        "migrate": "lucinate migrate",
+        "migrate:down": "lucinate migrate:down",
+        "seed": "lucinate seed"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "tsc-alias": "^1.8.16",
+        "typescript": "^5"
+    },
+    "dependencies": {
+        "@types/luxon": "^3.7.1",
+        "lucinate": "github:lucinate-orm/lucinate#main",
+        "luxon": "^3.7.2",
+        "mysql2": "^3.20.0",
+        "zod": "^4.3.6"
+    }
+}
