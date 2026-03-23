@@ -6,6 +6,18 @@ To install dependencies:
 bun install
 ```
 
+Run migrations
+```bash
+bunx lucinate migrate 
+```
+
+Run seeders
+```bash
+bunx lucinate seed
+# or 
+bunx lucinate seed -f comments_seeder -f medias_seeder
+```
+
 To run:
 
 ```bash
